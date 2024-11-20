@@ -1,0 +1,21 @@
+ 
+      <div class="col-md-8 offset-md-2">
+        <div class="card text-center mt-2">
+          <h3 class="card-header"><a href="{{ link.link }}" target="_blank">{{ link.title}}</a></h3>
+          <div class="card-body">
+            Points: <h3 class="display-4">{{ link.votes}}</h3>
+            <!-- <form action="">
+              <label for="title">Title</label>
+              <input type="text" name="title" #title class="form-control">
+              <label for="link">Link</label>
+              <input type="text" name="link" #link class="form-control">
+              <button (click)="addLink(title.value, link.value)" class="btn btn-primary btn-block mt-4">Submit Link</button>
+            </form> -->
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" (click)="link.voteUp()">Up</button>
+            <button class="btn btn-danger" (click)="link.voteDown()">Down</button>
+          </div>
+        </div>
+      </div>
+  
